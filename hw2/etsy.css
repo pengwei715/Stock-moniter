@@ -1,0 +1,79 @@
+body {
+    width: 960px;
+    margin: 24px auto;
+}
+
+header {
+    text-align: center
+}
+
+img {
+    width: 500px;
+    position: center;
+}
+
+article img {
+    /* width: 100%; */
+    box-shadow: 2px;
+}
+
+ul li a:hover {
+    color: #fff;
+    background: #939393;
+}
+
+ul li ul.dropdown {
+    min-width: 100%;
+    /* Set width of the dropdown */
+    background: #f2f2f2;
+    display: none;
+    position: right;
+    z-index: 999;
+    left: 0;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+    /* Display the dropdown */
+}
+
+ul li ul.dropdown li {
+    display: block;
+}
+
+@media print {
+    nav {
+        display: none
+    }
+}
+
+
+/* flexbox model of flow */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+li {
+    padding-right: 16px
+}
+
+@media (max-width: 900px) {
+    ul,
+    #container {
+        display: block;
+    }
+}
