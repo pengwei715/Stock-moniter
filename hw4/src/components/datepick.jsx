@@ -8,12 +8,11 @@ class DatePanel extends React.Component {
 
   state = {
     startDate: new Date()
-  };
+  }
   handleChange = date => {
     this.setState({startDate:date},
      this.sendDate(date))
-  };
-
+  }
 
   sendDate = (date) => {
     this.props.parentCallback(date)

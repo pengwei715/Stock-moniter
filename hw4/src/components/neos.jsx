@@ -59,18 +59,11 @@ class Neos extends React.Component {
     var obj = [...this.state.data];
     obj.sort((a,b) => b.estimated_diameter.meters.estimated_diameter_max - a.estimated_diameter.meters.estimated_diameter_max);
     obj.forEach(el=>{
-    res.push(<div className='text-light text-center' style = {{float:"left"}} key={el.name} onClick = {() => {window.open(el.nasa_jpl_url)}}>
-      <h5 className = 'mr-5' style = {{float:"left"}}>
-      Name: {el.name} 
-      </h5>
-      <h5 style = {{float:"left"}}>
-       Diameter: {el.estimated_diameter.meters.estimated_diameter_max} 
-      </h5>
-       
-       
-       
-       </div>)
-
+    res.push(
+    <div className='text-light text-center' style = {{float:"left"}} key={el.name} onClick = {() => {window.open(el.nasa_jpl_url)}}>
+      <h5 className = 'mr-5' style = {{float:"left"}}> Name: {el.name} </h5>
+      <h5 style = {{float:"left"}}>Diameter: {el.estimated_diameter.meters.estimated_diameter_max}</h5>
+    </div>)
     })
     return res
   }
@@ -83,16 +76,16 @@ class Neos extends React.Component {
     const neos = this.getItmes()
     return (
       <div className = 'row' style={{height:'auto'}}>
-      <div className = 'text-white col-sm-8 text-center h-100' style={{height:'auto'}} >
-        <ReactWordcloud options={this.options} words={this.state.clean_data} />
-      </div>
+        <div className = 'text-white col-sm-8 text-center h-100' style={{height:'auto'}} >
+          <ReactWordcloud options={this.options} words={this.state.clean_data} />
+        </div>
 
-      <div className = 'text-white bg-dark mb-3 col-sm-4 '>
-        <ul className=" list-group list-group-flush">
-          <h4 className = 'text-center'> Rank by Diameter</h4>
-        {neos}
-      </ul>  
-      </div>
+        <div className = 'text-white bg-dark mb-3 col-sm-4 '>
+          <ul className=" list-group list-group-flush">
+            <h4 className = 'text-center'> Rank by Diameter</h4>
+            {neos}
+          </ul>  
+        </div>
       </div>
       )
   }
