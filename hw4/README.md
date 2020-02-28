@@ -15,6 +15,5 @@ http://localhost:8080/
 
 **Live Demo**
 
-```
-https://pengwei715.github.io/NASA/dist/index.html
-```
+
+[Lets go live](https://pengwei715.github.io/NASA/dist/index.html)
