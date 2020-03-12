@@ -1,4 +1,5 @@
 {
+    "homepage": "https://pengwei715.github.io/Stock-moniter",
     "name": "fp",
     "version": "1.0.0",
     "description": "20 points",
@@ -6,6 +7,8 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "dev": "npx webpack-dev-server --port 8000 --hot --host 127.0.0.1 ",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d dist",
         "build": "webpack -p --define process.env.NODE_ENV='\"production\"' --progress --colors",
         "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
     },
@@ -56,6 +59,7 @@
         "react-bootstrap": "^0.31.5",
         "react-dom": "^16.2.0",
         "react-stockcharts": "^0.7.8",
-        "shortid": "^2.2.8"
+        "shortid": "^2.2.8",
+        "gh-pages":"^2.2.0"
     }
 }
