@@ -5,6 +5,7 @@ Used react to build a simple stock monitor, it support the following functions
 
 ### Features
 
+
 * Add to stock portfolio by providing:
     * Stock symbol (IBM, MSFT, AMZN, etc.)
     * Number of shares purchased
@@ -16,7 +17,9 @@ Used react to build a simple stock monitor, it support the following functions
     clicking the same column twice should toggle the sort order).
   * sell (substract) shares of a stock
   * see their total portfolio value (the sum of all stock values).
-* Advanced 
+* Advanced features:
+    * track the last year's price of given stock symbol.(the left bottom)
+    * track the latest news of the stock.(the right bottom)
 
 
 ### Installation
