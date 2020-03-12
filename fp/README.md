@@ -42,4 +42,4 @@ The webpack-dev-server will run. The app is at `127.0.0.1:8000`.
 Since the free IEX Group API does not always working, even in the sandbox, if one free acount request too much times in the short time. It will always return the 429 code.
 So to demonstrate the app, you can see the following youtube video
 
-[![Alt text](https://img.youtube.com/vi/w2orHDae6wo/0.jpg)](https://www.youtube.com/watch?v=w2orHDae6wo "Demo - Click to Watch!")
+[![Demo](https://img.youtube.com/vi/w2orHDae6wo/0.jpg)](https://youtu.be/w2orHDae6wo?t=1m38s "Demo - Click to Watch!")
