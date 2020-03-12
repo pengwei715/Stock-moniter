@@ -27,7 +27,6 @@ export function getData(symbol) {
 	return promiseMSFT;
 }
 
-
 export function getNews(symbol) {
     const news = fetch(`https://sandbox.iexapis.com/stable/stock/${symbol}/batch?types=news&range=1m&last=5&token=Tpk_51bea65b13774bd2834cecb06d37b02b`)
     .then((response) => {return response.json()})
