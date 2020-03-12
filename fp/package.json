@@ -60,6 +60,6 @@
         "react-dom": "^16.2.0",
         "react-stockcharts": "^0.7.8",
         "shortid": "^2.2.8",
-        "gh-pages":"^2.2.0"
+        "gh-pages": "^2.2.0"
     }
 }
