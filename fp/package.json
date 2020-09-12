@@ -33,7 +33,7 @@
         "html-webpack-plugin": "^3.2.0",
         "json-2-csv": "^3.6.1",
         "material-dashboard": "^2.1.0",
-        "node-fetch": "^2.6.0",
+        "node-fetch": "^2.6.1",
         "node-sass": "^4.13.1",
         "react": "^16.12.0",
         "react-alice-carousel": "^1.17.3",
